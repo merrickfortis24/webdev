@@ -1,14 +1,22 @@
-/* Pornhub Color Scheme */
+/* ----- Global Styles ----- */
 body {
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text */
+
+    background-color: #ff9900; /* Updated background color */
+    color: #ffffff; /* White text for contrast */
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
+/* ----- Header ----- */
 header {
-    background-color: #282828; /* Dark gray header */
-    padding: 15px;
-    text-align: center;
+    background-color: #1a1a1a; /* Slightly lighter black for depth */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
 }
 
 .logo {
@@ -17,36 +25,84 @@ header {
 }
 
 .logo span {
-    color: #ff9900; /* Orange for emphasis */
+    color: #ff9900; /* Orange accent */
 }
 
-.button {
-    background-color: #ff9900;
-    color: #000000;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+/* ----- Navigation ----- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
     font-weight: bold;
+}
+
+nav ul li .btn {
+    background-color: #ff9900; /* Orange CTA button */
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #000000; /* High contrast for readability */
     transition: 0.3s;
 }
 
-.button:hover {
+nav ul li .btn:hover {
+    background-color: #e68a00; /* Darker orange for hover effect */
+}
+
+/* ----- Main Content ----- */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff9900; /* Highlighted title */
+}
+
+/* ----- CTA Button ----- */
+.cta-btn {
+    background-color: #ff9900;
+    color: #000000;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
     background-color: #e68a00; /* Slightly darker orange */
 }
 
-.container {
-    text-align: center;
-    margin-top: 50px;
-}
-
+/* ----- Card Component ----- */
 .card {
-    background-color: #282828;
+    background-color: #282828; /* Dark gray for depth */
     padding: 20px;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
 .card h2 {
     color: #ff9900;
+}
+
+/* ----- Footer ----- */
+footer {
+    background-color: #1a1a1a;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 30px;
 }
