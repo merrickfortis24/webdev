@@ -1,0 +1,52 @@
+/* Pornhub Color Scheme */
+body {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #282828; /* Dark gray header */
+    padding: 15px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff9900; /* Orange for emphasis */
+}
+
+.button {
+    background-color: #ff9900;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #e68a00; /* Slightly darker orange */
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #282828;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: #ff9900;
+}
